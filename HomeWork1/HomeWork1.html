@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .toRed{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+        <h1 class="tored" style="text-align:center">Hello World!</h1>
+        <div style="text-align:center">
+            <button >变为红色</button>
+            <button >复原</button>
+        </body>
+</body>
+<script>
+    var btn=document.querySelectorAll('button')
+    var h1=document.querySelector('h1')
+    btn[0].onclick=function(){
+        h1.classList.add('toRed')
+    }
+    btn[1].onclick=function(){
+        h1.classList.remove('toRed')
+    }
+</script>
+</html>
